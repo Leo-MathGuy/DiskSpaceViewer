@@ -16,4 +16,29 @@ Works by:
 6. Add 700 permissions to the script
 7. Run "systemctl (start or enable, your choice) disk-space-updater" or eqivalent
 8. Check journal to see if configured correctly
-9. "tkinter" PyPi package required
+9. "tkinter" PyPi package required (pip3 install tkinter)
+10. Run "python3 disk-space-viewer.py" while in same directory to run program
+
+## Additional
+
+* Add application to KDE:
+  1. Open Menu Editor
+  2. Click "Utilities"
+  3. Click "Add"
+  4. Write "python3" in "Program"
+  5. Write python program location in "Command-Line Arguments"
+  6. Click blank square in top right
+  7. Find an icon (for example, ksysguard icon)
+  8. Ctrl-S
+  9. Congrats you can now launch this from the KDE menu
+
+## Troubleshooting
+
+* /var/ File not showing
+  1. Make sure service is started
+  2. Check journal
+    * If shows syntax error:
+    * Probably script is configured wrong
+* Stuck on Loading...
+  1. Make sure service is started
+  2. Make sure read perms are in the /var/ file
