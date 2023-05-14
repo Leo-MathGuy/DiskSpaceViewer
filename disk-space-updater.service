@@ -1,0 +1,12 @@
+[Unit]
+Description=Init Brightness Setter
+After=getty.target
+
+[Service]
+Type=simple
+ExecStart=/bin/bash {REPLACE WITH .sh SCRIPT LOCATION}
+
+StandardOutput=journal
+StandardError=journal
+[Install]
+WantedBy=multi-user.target
