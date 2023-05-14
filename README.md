@@ -14,4 +14,6 @@ Works by:
 4. Copy the script into that location
 5. Replace the 1 in "sed '1q;d'" on lines 5 and 6 to the line on which the desired partrition in df shows up.
 6. Add 700 permissions to the script
-7. Run "systemctl (start or enable, your choice) disk-space-updater
+7. Run "systemctl (start or enable, your choice) disk-space-updater" or eqivalent
+8. Check journal to see if configured correctly
+9. "tkinter" PyPi package required
