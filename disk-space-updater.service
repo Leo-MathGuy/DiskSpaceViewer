@@ -1,5 +1,5 @@
 [Unit]
-Description=Init Brightness Setter
+Description=Disk Space File Updater
 After=getty.target
 
 [Service]
