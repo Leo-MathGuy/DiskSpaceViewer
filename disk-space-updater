@@ -1,7 +1,5 @@
 #/bin/bash
 
-line=1
-
 while [ true ]
 do
 a=$(df | sed '1q;d' | sed 's/  */ /g' | cut -d ' ' -f 4)
