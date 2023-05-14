@@ -12,5 +12,6 @@ Works by:
 2. Set 744 permissions to the file
 3. Replace the { REPLACE } with the place you will copy the script to. (For example, /home/{user}/.local/bin/disk-space-updater)
 4. Copy the script into that location
-5. 
+5. Replace the 1 in "sed '1q;d'" on lines 5 and 6 to the line on which the desired partrition in df shows up.
 6. Add 700 permissions to the script
+7. Run "systemctl (start or enable, your choice) disk-space-updater
