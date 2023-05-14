@@ -1,0 +1,10 @@
+#/bin/bash
+
+while [ true ]
+do
+a=$(df | sed '4q;d' | sed 's/  */ /g' | cut -d ' ' -f 4)
+b=$(df | sed '4q;d' | sed 's/  */ /g' | cut -d ' ' -f 2)
+c="scale=15; $a/$b"
+echo "${c}" | bc > /var/diskpercent.txt
+sleep 0.25 
+done
