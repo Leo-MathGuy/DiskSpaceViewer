@@ -6,6 +6,8 @@ Something I made in 30 minutes. Shows 10000 5px squares on a 500x550 screen, red
 Works by:
 (systemd service) --starts--> (sh script) --sends data--> (/var file) --used by--> (python app)
 
+<img src="./sample.png" alt="screenshot" width=300>
+
 ## How to setup
 
 1. Copy the .service file into /etc/systemd/system (or equivalent)
